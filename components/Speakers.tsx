@@ -3,8 +3,8 @@ import { SectionHeading } from './ui/SectionHeading';
 import { motion } from 'framer-motion';
 
 const speakers = [
-  { name: "Narendra Modi", role: "Prime Minister of India", img: "assets/Pm_Modi.png" },
-  { name: "Mohan Charan Majhi ", role: "Chief Minister of Odisha", img: "assets/Mohan_Charan_Majhi.jpg" },
+  { name: "Narendra Modi", role: "Prime Minister of India", img: "/odisha-ai-summit-2025v2/assets/Pm_Modi.png" },
+  { name: "Mohan Charan Majhi ", role: "Chief Minister of Odisha", img: "/odisha-ai-summit-2025v2/assets/Mohan_Charan_Majhi.jpg" },
 ];
 
 export const Speakers: React.FC = () => {

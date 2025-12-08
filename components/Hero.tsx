@@ -103,7 +103,7 @@ export const Hero: React.FC = () => {
             className="relative w-full h-full animate-float flex items-center justify-center p-4"
           >
             <img
-              src="assets/odisha-map.png"
+              src="/odisha-ai-summit-2025v2/assets/odisha-map.png"
               alt="Odisha Map"
               className="w-full h-full object-contain drop-shadow-[0_0_30px_rgba(255,107,53,0.4)]"
               style={{
@@ -209,7 +209,7 @@ export const Hero: React.FC = () => {
               className="p-2 bg-white rounded-xl mb-2"
             >
               <img
-                src="assets/Odisha_qr.png"
+                src="/odisha-ai-summit-2025v2/assets/Odisha_qr.png"
                 alt="Scan QR Code"
                 className="w-28 h-28 sm:w-36 sm:h-36 object-contain"
               />
