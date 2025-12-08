@@ -20,7 +20,7 @@ export const Hero: React.FC = () => {
           className="bg-white rounded-lg p-2 flex items-center gap-2 sm:gap-3 shadow-[0_0_20px_rgba(255,107,53,0.15)] border border-orange-200/50 pointer-events-auto max-w-[70%] sm:max-w-none"
         >
           <div className="w-8 h-8 sm:w-10 sm:h-10 border-2 border-gray-200 rounded-full flex items-center justify-center flex-shrink-0">
-            <img src="odisha-ai-summit-2025v2/assets/1666094039681.jpg" alt="Govt Logo" className="w-full h-full p-1 object-contain" />
+            <img src="/odisha-ai-summit-2025v2/assets/1666094039681.jpg" alt="Govt Logo" className="w-full h-full p-1 object-contain" />
           </div>
           <div className="text-gray-800 text-[9px] sm:text-[10px] leading-tight font-bold border-l border-orange-300 pl-2">
             Electronics & Information<br />
