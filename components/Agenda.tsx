@@ -278,20 +278,7 @@ export const Agenda: React.FC = () => {
                         <p className="text-gray-600 text-xs sm:text-sm mb-4 leading-relaxed">{item.desc}</p>
                       )}
 
-                      {/* Speakers List */}
-                      {item.speakers && item.speakers.length > 0 && (
-                        <div className="mt-4 mb-4 text-left">
-                          <h4 className="text-sm font-bold text-orange-600 mb-2">Speakers:</h4>
-                          <ul className="space-y-1.5 text-xs text-gray-700">
-                            {item.speakers.map((speaker: string, idx: number) => (
-                              <li key={idx} className="flex items-start gap-2">
-                                <span className="text-neon-orange mt-1">•</span>
-                                <span>{speaker}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
+
 
                       {/* Nested Sessions (for parallel breakout sessions) */}
                       {item.sessions && item.sessions.length > 0 && (
@@ -303,16 +290,7 @@ export const Agenda: React.FC = () => {
                               {session.moderator && (
                                 <p className="text-xs text-gray-600 italic mb-2">Moderator: {session.moderator}</p>
                               )}
-                              {session.speakers && session.speakers.length > 0 && (
-                                <ul className="space-y-1 text-xs text-gray-700 mt-2">
-                                  {session.speakers.map((speaker: string, speakerIdx: number) => (
-                                    <li key={speakerIdx} className="flex items-start gap-2">
-                                      <span className="text-orange-400 mt-0.5">▸</span>
-                                      <span>{speaker}</span>
-                                    </li>
-                                  ))}
-                                </ul>
-                              )}
+
                             </div>
                           ))}
                         </div>

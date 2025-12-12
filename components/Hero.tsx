@@ -46,7 +46,7 @@ export const Hero: React.FC = () => {
               <h3 className="text-xl sm:text-2xl font-bold text-gray-800 font-display">IndiaAI Impact Summit 2026</h3>
             </div>
 
-            <p className="text-gray-600 text-base sm:text-md max-w-full mx-auto lg:mx-0 font-light leading-relaxed">
+            <p className=" text-justify text-gray-600 text-base sm:text-md max-w-full mx-auto lg:mx-0 font-light leading-relaxed">
               Experience Odisha’s growing leadership in AI innovation, with the state emerging as a frontrunner in accelerating sector-wide AI adoption. This two-day pre-summit to the Global IndiaAI Impact Summit 2026 brings together brings together experts, policymakers, and industry leaders to demonstrate how AI is already improving outcomes across sectors and to align stakeholders around Odisha’s long-term AI vision, priorities, and partnerships for the future diverse group of experts and stakeholders.
 
               <br />
