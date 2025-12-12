@@ -34,25 +34,13 @@ export const About: React.FC = () => {
           >
             <SectionHeading subtitle="About The Event" title="𝐒𝐡𝐨𝐰𝐜𝐚𝐬𝐞 𝐘𝐨𝐮𝐫 𝐀𝐈 𝐈𝐧𝐧𝐨𝐯𝐚𝐭𝐢𝐨𝐧𝐬 𝐚𝐭 𝐭𝐡𝐞 𝐎𝐝𝐢𝐬𝐡𝐚 𝐀𝐈 𝐒𝐮𝐦𝐦𝐢𝐭 𝟮𝟬𝟮𝟱!" align="left" />
             <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
-              The We’re excited to invite AI-driven organizations and startups to join us at the <span className="text-neon-purple font-semibold"> Odisha AI Summit 2025 on 19th-20th December at the State Convention Centre, Bhubaneswar.</span> This summit, as a pre-event to the India AI Summit 2026, aims to unite policymakers, industry leaders, startups, and academia to explore AI’s transformative role.
+              OdishaAI Summit 2025 is a two-day pre-summit to the Global IndiaAI Impact Summit 2026. The event brings together leaders from government, academia, and industry to shape India’s AI future. Hosted in Bhubaneswar, it highlights Odisha’s growing role as a hub for innovation and focuses on research, governance, healthcare, language technology, and the state’s long-term AI vision. The summit sets the stage for collaboration and practical pathways that advance inclusive and responsible AI adoption.
+
 
             </p>
-            <p className="text-gray-600 leading-relaxed mb-8 text-sm sm:text-base">
-              One of the key components of the summit will be the Experience Zones, where selected innovators will showcase live solutions across but not limited to sectors like agriculture, healthcare, disaster management, mobility, governance, and more.
-            </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
-              {[
-                { icon: <Globe className="text-neon-blue" />, text: "Global Perspective" },
-                { icon: <Cpu className="text-neon-purple" />, text: "Deep Tech Focus" },
-                { icon: <Lightbulb className="text-neon-gold" />, text: "Actionable Insights" },
-              ].map((item, i) => (
-                <div key={i} className="flex flex-col items-center text-center p-4 bg-orange-50/50 rounded-lg border border-orange-200/50 hover:bg-orange-100/50 transition-colors">
-                  <div className="mb-2 p-2 bg-orange-100 rounded-full">{item.icon}</div>
-                  <span className="text-sm font-medium text-gray-700">{item.text}</span>
-                </div>
-              ))}
-            </div>
+
+
           </motion.div>
         </div>
       </div>

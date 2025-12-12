@@ -1,37 +1,49 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { SectionHeading } from './ui/SectionHeading';
-import { Scale, Users, Sprout, Briefcase, HeartPulse } from 'lucide-react';
+import { Map, Lightbulb, GraduationCap, Languages, HeartPulse, Server, Building2 } from 'lucide-react';
 
 const tracks = [
   {
-    icon: <Scale size={24} />,
-    title: "AI in Governance",
-    desc: "Implementing AI for transparent, efficient, and data-driven public administration.",
+    icon: <Map size={24} />,
+    title: "AI Transformation Roadmaps for Indian States",
+    desc: "A strategic discussion on how Indian states can build scalable, citizen-first AI ecosystems.",
     color: "from-blue-600 to-blue-400"
   },
   {
-    icon: <Briefcase size={24} />,
-    title: "Future of Work",
-    desc: "Reskilling the workforce for the AI era and fostering a startup ecosystem.",
+    icon: <Lightbulb size={24} />,
+    title: "Impact of AI Research and Innovation",
+    desc: "Insights from leading researchers on breakthroughs shaping the next generation of AI solutions.",
     color: "from-purple-600 to-purple-400"
   },
   {
-    icon: <Sprout size={24} />,
-    title: "Agri-Tech & Rural AI",
-    desc: "Leveraging predictive models for crop yield, soil health, and market linkages.",
+    icon: <GraduationCap size={24} />,
+    title: "Future of Education through AI",
+    desc: "A look at how AI can personalise learning and expand access to high-quality education.",
     color: "from-green-600 to-green-400"
   },
   {
-    icon: <HeartPulse size={24} />,
-    title: "Healthcare Innovation",
-    desc: "AI diagnostics and telemedicine solutions for accessible last-mile healthcare.",
+    icon: <Languages size={24} />,
+    title: "Building AI for Odia",
+    desc: "Transforming Odia from a low-resource language into one that thrives in the AI ecosystem.",
     color: "from-red-600 to-red-400"
   },
   {
-    icon: <Users size={24} />,
-    title: "Ethics & Inclusion",
-    desc: "Ensuring responsible AI that is unbiased, safe, and accessible to all citizens.",
+    icon: <HeartPulse size={24} />,
+    title: "AI for Healthcare",
+    desc: "Driving conversations on AI that strengthens diagnostics, healthcare access, and patient outcomes.",
+    color: "from-orange-600 to-orange-400"
+  },
+  {
+    icon: <Server size={24} />,
+    title: "Laying the Foundation for Data Centres in Odisha",
+    desc: "A deep dive into Odisha's roadmap for infrastructure that powers AI and digital growth.",
+    color: "from-orange-600 to-orange-400"
+  },
+  {
+    icon: <Building2 size={24} />,
+    title: "AI for Governance",
+    desc: "Discussions on using AI to enhance efficiency, transparency, and service delivery in government.",
     color: "from-orange-600 to-orange-400"
   }
 ];

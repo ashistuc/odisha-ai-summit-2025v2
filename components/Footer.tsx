@@ -29,7 +29,7 @@ export const Footer: React.FC = () => {
                 </svg>
               </a>
               {/* Facebook, LinkedIn, Instagram */}
-              {[Facebook, Linkedin, Instagram].map((Icon, i) => (
+              {[Facebook, Linkedin].map((Icon, i) => (
                 <a key={i} href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-neon-orange hover:border-neon-orange transition-all hover:shadow-[0_0_15px_rgba(255,107,53,0.5)]">
                   <Icon size={18} />
                 </a>
@@ -54,10 +54,7 @@ export const Footer: React.FC = () => {
                 <Mail size={18} className="text-neon-purple mt-1 flex-shrink-0" />
                 <span>odishaaisummit2025@odisha.gov.in</span>
               </li>
-              <li className="flex items-start gap-3">
-                <Phone size={18} className="text-neon-purple mt-1 flex-shrink-0" />
-                <span>+91 674 234 5678</span>
-              </li>
+
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-neon-purple mt-1 flex-shrink-0" />
                 <span className="text-sm">

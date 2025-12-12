@@ -173,14 +173,7 @@ export const Navbar: React.FC = () => {
                   className="h-full w-auto object-contain"
                 />
               </div>
-              <div className="h-6 sm:h-8 w-px bg-gradient-to-b from-transparent via-orange-300 to-transparent"></div>
-              <div className="h-8 sm:h-10 flex items-center">
-                <img
-                  src="/odisha-ai-summit-2025v2/assets/India_AI_logo.png"
-                  alt="India AI Logo"
-                  className="h-full w-auto object-contain"
-                />
-              </div>
+
               <div className="h-6 sm:h-8 w-px bg-gradient-to-b from-transparent via-orange-300 to-transparent"></div>
               <div className="h-8 sm:h-10 flex items-center">
                 <img

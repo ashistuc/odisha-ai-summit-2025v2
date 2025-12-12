@@ -46,8 +46,13 @@ export const Hero: React.FC = () => {
               <h3 className="text-xl sm:text-2xl font-bold text-gray-800 font-display">IndiaAI Impact Summit 2026</h3>
             </div>
 
-            <p className="text-gray-600 text-base sm:text-lg max-w-lg mx-auto lg:mx-0 font-light leading-relaxed">
-              We’re excited to invite AI-driven organizations and startups to join us at the Odisha AI Summit 2025 on 19th-20th December at the State Convention Centre, Bhubaneswar.
+            <p className="text-gray-600 text-base sm:text-md max-w-full mx-auto lg:mx-0 font-light leading-relaxed">
+              Experience Odisha’s growing leadership in AI innovation, with the state emerging as a frontrunner in accelerating sector-wide AI adoption. This two-day pre-summit to the Global IndiaAI Impact Summit 2026 brings together brings together experts, policymakers, and industry leaders to demonstrate how AI is already improving outcomes across sectors and to align stakeholders around Odisha’s long-term AI vision, priorities, and partnerships for the future diverse group of experts and stakeholders.
+
+              <br />
+
+              The summit also seeks to build a shared vision for the State’s AI journey, align departments and partners on strategic priorities, and catalyse new collaborations, especially around talent, infrastructure, research, and scalable public-sector AI solutions.
+
             </p>
           </motion.div>
 
@@ -96,7 +101,7 @@ export const Hero: React.FC = () => {
               transition={{ delay: 1 }}
             >
               {/* Bhubaneswar Node */}
-              <div className="absolute top-[55%] left-[70%]">
+              <div className="absolute top-[46%] left-[68%]">
                 <div className="w-4 h-4 bg-neon-orange rounded-full animate-ping absolute"></div>
                 <div className="w-3 h-3 bg-white rounded-full shadow-[0_0_20px_rgba(255,107,53,1)] relative z-10"></div>
               </div>
@@ -108,7 +113,7 @@ export const Hero: React.FC = () => {
 
             {/* Venue Card */}
             <motion.div
-              className="absolute top-[55%] left-[72%] glass-card px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg flex items-center gap-2 sm:gap-3 border-l-2 border-l-neon-orange transform -translate-y-1/2 -translate-x-1/2 w-max max-w-[150px] sm:max-w-none shadow-lg"
+              className="absolute top-[35%] left-[69%] glass-card px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg flex items-center gap-2 sm:gap-3 border-l-2 border-l-neon-orange transform -translate-y-1/2 -translate-x-1/2 w-max max-w-[150px] sm:max-w-none shadow-lg"
               initial={{ x: 20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 1.2 }}

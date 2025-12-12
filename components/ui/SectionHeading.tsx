@@ -10,7 +10,7 @@ interface SectionHeadingProps {
 export const SectionHeading: React.FC<SectionHeadingProps> = ({ subtitle, title, align = 'center' }) => {
   return (
     <div className={`mb-12 ${align === 'center' ? 'text-center' : 'text-left'}`}>
-      <motion.span 
+      <motion.span
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -18,12 +18,12 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({ subtitle, title,
       >
         {subtitle}
       </motion.span>
-      <motion.h2 
+      <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.1 }}
-        className="text-3xl md:text-5xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-neon-purple via-neon-orange to-orange-600"
+        className=" pb-5 text-3xl md:text-5xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-neon-purple via-neon-orange to-orange-600"
       >
         {title}
       </motion.h2>
