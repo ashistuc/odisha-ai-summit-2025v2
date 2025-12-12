@@ -168,7 +168,7 @@ export const Navbar: React.FC = () => {
             >
               <div className="h-8 sm:h-10 flex items-center">
                 <img
-                  src="/odisha-ai-summit-2025v2/assets/mission-removebg-preview.png"
+                  src="/odisha-ai-summit-2025v2/assets/Odisha_Ai_Summit.png"
                   alt="Mission Logo"
                   className="h-full w-auto object-contain"
                 />

@@ -8,33 +8,21 @@ const schedule = {
     {
       time: "10:30 AM - 11:30 AM",
       title: "Opening Ceremony",
-      desc: "Key Wins, Speeches from Dignitaries, MoU Signing",
+      desc: "",
       location: "Venue 1 (Main Hall)",
-      type: "Keynote",
-      speakers: [
-        "Mr Vishal Dev (Principal Secretary, Odisha) - Welcome Remarks",
-        "Mr Abhishek Singh (Additional Sec, MeitY)",
-        "Mr Manoj Ahuja (Chief Secretary, Odisha)",
-        "Mr S Krishnan (Secretary, MeitY)",
-        "Ms Niyaruti Rai (CEO, Invest India)",
-        "Dr Mukesh Mahaling (IT Minister, Odisha)",
-        "Mr Omar Sultân Al Olama (Minister of State for AI, UAE)",
-        "Mr Ashwini Vaishnaw (Cabinet Minister, MeitY)",
-        "Shri Dharmendra Pradhan (Cabinet Minister)",
-        "Mr Manas Panda - Vote of Thanks"
-      ]
+      type: "Keynote"
     },
     {
       time: "11:30 AM - 12:00 PM",
       title: "Break",
       desc: "",
-      location: "Main Hall",
+      location: "",
       type: "Break"
     },
     {
       time: "12:00 PM - 1:30 PM",
-      title: "Breakout Session 1: Transformation Roadmaps for AI in Indian States",
-      desc: "Moderator: Mr Gaurav Goel - CEO, Samagra. IT Secretaries of 7 states including Mr Vishal Dev (Odisha), Mr Sanjay Kumar (Telangana), Mr Anurag Yadav (Uttar Pradesh), Mr Virendra Singh (Maharashtra), Mr Neetu Kumari Prasad (Madhya Pradesh), Dr Manjula N (Karnataka), Mr K.S. Gopinath-Narayeen (Assam) - Director Equivalent Will Attend, Ms Debjani Ghosh (Chief Architect - NITI Frontier Tech Hub)",
+      title: "Session 1: Transformation Roadmaps for AI in Indian States",
+      desc: "",
       location: "Venue 1 (Main Hall)",
       type: "Panel"
     },
@@ -42,101 +30,70 @@ const schedule = {
       time: "1:30 PM - 2:30 PM",
       title: "Lunch",
       desc: "",
-      location: "Dining Hall",
+      location: "",
       type: "Break"
     },
     {
       time: "2:30 PM - 4:00 PM",
-      title: "Breakout Session 2 & 3",
-      desc: "Session 2: Impact of AI Research and Innovation (Venue 1) | Session 3: Path.AI - Unlocking the future of education through AI (Venue 2)",
+      title: "Session 2 & 3",
+      desc: "",
       location: "Venue 1 & 2",
       type: "Panel",
       sessions: [
         {
           venue: "Venue 1 (Main Hall)",
-          title: "Impact of AI Research and Innovation",
-          moderator: "Prof. Mayank Vatsa - Microsoft",
-          speakers: [
-            "Mr R Bavindan (Head, Wadhwani School of Data Science and AI, IIT Madras)",
-            "Mr Prasant Mohapatra (Provost, University of South Florida)",
-            "Mr Venu Govindaraju (Senior Vice President for Research, Innovation & Economic Development, SUNY Buffalo University)",
-            "Mr Manish Mahajan (Chief AI Officer, University of Utah)",
-            "Mr Ashwini K Nanda (Center Director, MHRC, IIT-Bhubaneswar)",
-            "Prof Lakshmidhar Behera (Director, IIT Mandi)"
-          ]
+          title: "Session 2: Impact of AI Research and Innovation"
         },
         {
           venue: "Venue 2 (Conference Hall)",
-          title: "Path.AI - Unlocking the future of education through AI",
-          moderator: "Simran Bagga, Program Coordinator, AI Powered Odisha",
-          speakers: [
-            "Dr Manish Gupta (Senior Director, Google DeepMind)",
-            "Prof Chitta Baral (Arizona State University)",
-            "Mr Ashish Ghosh (Director, IIIT Bhubaneswar)",
-            "Ms Pragya Mitra (India Public Policy Lead, OpenAI)",
-            "Ms. Ajaya K Mohanty",
-            "Prof Sukamar Mishra (Director, ISM-Dhanbad)",
-            "Mr Prathyush-Kumar (Co-Founder, Sarvaim)"
-          ]
+          title: "Session 3: Padh.AI - Unlocking the future of education through AI"
         }
       ]
     },
     {
       time: "4:00 PM - 5:00 PM",
-      title: "Keynote Speaker Talk + Q&A",
-      desc: "Mr Ravi Kumar S (CEO, Cognizant)",
+      title: "Keynote Speech + Q&A",
+      desc: "",
       location: "Venue 1 (Main Hall)",
       type: "Keynote"
     },
     {
-      time: "5:00 PM Onwards",
-      title: "Cultural Event",
+      time: "5:00 PM - 5:30 PM",
+      title: "Tea Break",
       desc: "",
-      location: "Main Hall",
+      location: "",
+      type: "Break"
+    },
+    {
+      time: "5:00 PM Onwards",
+      title: "Cultural event",
+      desc: "",
+      location: "",
       type: "General"
     }
   ],
   day2: [
     {
       time: "10:30 AM - 12:00 PM",
-      title: "Breakout Session 4 & 5",
-      desc: "Session 4: Bhasha.AI - Building AI for Odia (Venue 1) | Session 5: Swasth.AI - AI for Healthcare (Venue 2)",
+      title: "Session 4 & 5",
+      desc: "",
       location: "Venue 1 & 2",
       type: "Panel",
       sessions: [
         {
           venue: "Venue 1 (Main Hall)",
-          title: "Bhasha.AI - Building AI for Odia",
-          moderator: "Dipankar Rath, AI Consultant, OCAC",
-          speakers: [
-            "Dr. Bijay Ketan Upadhyaya, IAS (Secretary, Odisha Language Literature & Culture Department)",
-            "Mr. Vivek Raghavan (Co-Founder, Sarvam)",
-            "Mr Amitabh Nag (CEO, BHASHINI)",
-            "Mr Ashwini K Nanda (Center Director, AHRC, IIT-Bhubaneswar)",
-            "Mr Pradeep Rout (Head, Odia Virtual Academy)",
-            "Prof Nalini Ratha (SUNY-Buffalo)"
-          ]
+          title: "Session 4: Bhasha.AI - Building AI for Odia"
         },
         {
           venue: "Venue 2 (Conference Hall)",
-          title: "Swasth.AI - AI for Healthcare",
-          moderator: "Prattusha Mukhopadhyay, Samagra Governance",
-          speakers: [
-            "Ms Aswathy S (Secretary, Department of H&FW, Odisha)",
-            "Mr Priyadarshi Mohapatra (Founder & CEO, CureBay)",
-            "Prof Tapan Gandhi (Professor, IIT Delhi)",
-            "Dr. Debasis Dash (Director, Institute of Life Sciences, Bhubaneswar)",
-            "Ms Poorva Malaviya (Head of Engineering, Noora Health)",
-            "Dr. Chinmay Dwibedi (Group Leader, Umee)",
-            "Dr Prachi Karkhanis (Expert - MEL & Gender, Wadhwani AI)"
-          ]
+          title: "Session 5: Swasth.AI - AI for Healthcare"
         }
       ]
     },
     {
       time: "12:00 PM - 1:00 PM",
-      title: "Keynote Speaker Talk + Q&A",
-      desc: "Mr Aravind Srinivas (CEO, Perplexity AI)",
+      title: "Keynote Speech + Q&A",
+      desc: "",
       location: "Venue 1 (Main Hall)",
       type: "Keynote"
     },
@@ -144,46 +101,28 @@ const schedule = {
       time: "1:00 PM - 2:00 PM",
       title: "Lunch",
       desc: "",
-      location: "Dining Hall",
+      location: "",
       type: "Break"
     },
     {
       time: "2:00 PM - 3:30 PM",
-      title: "Breakout Session 7 & 8",
-      desc: "Session 7: Laying the Foundation for Data Centres in Odisha (Venue 1) | Session 8: Sushasan.AI - AI for Governance (Venue 2)",
+      title: "Session 7 & 8",
+      desc: "",
       location: "Venue 1 & 2",
       type: "Panel",
       sessions: [
         {
           venue: "Venue 1 (Main Hall)",
-          title: "Laying the Foundation for Data Centres in Odisha",
-          speakers: [
-            "Mr Manas Panda (MD, OCAC)",
-            "Mr Ramaly Kapoor (EVP Investments, Tillman Global Holdings)",
-            "Mr Siddharth Reddy (VP Strategy, Yotta)",
-            "Mr Rohan Sheth (Head Data Centres, Yotta)",
-            "Mr Prakhar Sharma (Head Marketing, AdaniConnex)"
-          ]
+          title: "Session 7: Laying the Foundation for Data Centres in Odisha"
         },
         {
           venue: "Venue 2 (Conference Hall)",
-          title: "Sushasan.AI - AI for Governance",
-          moderator: "Vijeeth Srinivas, Program Lead, AI Powered Odisha",
-          speakers: [
-            "Dr Arabinda Kumar Padhee (Principal Secretary, Department of A&FE, Odisha)",
-            "Mr Bodhisattwa (Bodhi) Sanghapriya (Founder & CEO, IG Drones)",
-            "Mr Gaurav Achha (Co-Founder and Co-CEO, BonV Aero)",
-            "Shri Surendra Kumar (Additional Chief Secretary, GA&PG)",
-            "Mr Vineet Bhardwaj (Centre for Modernising Government Initiative)",
-            "Mr Murthy Adivi (Faculty of Emerging Technology, Wadhwani Foundation)",
-            "Dr Niladri Bihari Mohanty (It. Director(IT) & Head, AI & Innovation Cell, NIC, Odisha, GoI)",
-            "Ms Maya Sherman (AI Expert, GPAI and Innovation Advisor, Israel Embassy)"
-          ]
+          title: "Session 8: Sushasan.AI - AI for Governance"
         }
       ]
     },
     {
-      time: "3:30 PM - 4:00 PM",
+      time: "3:30 AM - 4:00 PM",
       title: "Tea Break",
       desc: "",
       location: "",
@@ -192,7 +131,7 @@ const schedule = {
     {
       time: "4:00 PM - 6:00 PM",
       title: "Closing Ceremony",
-      desc: "Dignitaries: Mr Vishal Dev (Principal Secretary, Department of E&IT, Odisha), Ms Anu Garg (Development Commissioner, Odisha), Mr Akhil Kumar (CEO, Digital India Corporation), Mr Nand Kumarum (CEO, NeGD)",
+      desc: "",
       location: "Venue 1 (Main Hall)",
       type: "Keynote"
     }
