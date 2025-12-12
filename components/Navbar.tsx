@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from './ui/Button';
 import { RegistrationModal } from './RegistrationModal';
+import { motion } from 'framer-motion';
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -131,7 +132,6 @@ export const Navbar: React.FC = () => {
     { name: 'Tracks', href: '#tracks' },
     { name: 'Agenda', href: '#agenda' },
     { name: 'Speakers', href: '#speakers' },
-    { name: 'Experience Zone', href: '#experience' },
   ];
 
   return (
@@ -141,22 +141,59 @@ export const Navbar: React.FC = () => {
           }`}
       >
         <div className="container mx-auto px-4 flex items-center justify-between">
-          <div className="flex items-center gap-3 group cursor-pointer">
-            {/* Logo */}
-            <div className={`w-10 h-10 rounded-lg bg-gradient-to-br from-neon-purple to-neon-orange flex items-center justify-center font-black text-white text-sm transition-all duration-300 hover:scale-105 ${isScrolled ? 'shadow-[0_0_20px_rgba(255,107,53,0.4)]' : 'shadow-[0_0_15px_rgba(255,107,53,0.5)]'
-              }`}>
-              OA
-            </div>
-            <div className="flex flex-col">
-              <span className={`font-display font-bold tracking-wider leading-none text-lg transition-all duration-300 group-hover:text-neon-orange ${isScrolled ? 'text-gray-800' : 'text-gray-800'
-                }`}>
-                ODISHA <span className="text-neon-orange group-hover:text-orange-600">AI</span>
-              </span>
-              <span className={`text-[10px] uppercase tracking-widest leading-none mt-1 transition-all duration-300 group-hover:text-orange-700 ${isScrolled ? 'text-orange-600' : 'text-orange-600'
-                }`}>
-                Summit 2025
-              </span>
-            </div>
+          <div className="flex items-center gap-3 sm:gap-4">
+            {/* Three Organization Logos */}
+            {/* Government Department Logo */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.1 }}
+              className="bg-white rounded-lg p-2 flex items-center gap-2 sm:gap-3 shadow-[0_0_20px_rgba(255,107,53,0.15)] border border-orange-200/50 max-w-[70%] sm:max-w-none"
+            >
+              <div className="w-8 h-8 sm:w-10 sm:h-10 border-2 border-gray-200 rounded-full flex items-center justify-center flex-shrink-0">
+                <img src="/odisha-ai-summit-2025v2/assets/1666094039681.jpg" alt="Govt Logo" className="w-full h-full p-1 object-contain" />
+              </div>
+              <div className="text-gray-800 text-[9px] sm:text-[10px] leading-tight font-bold border-l border-orange-300 pl-2">
+                Electronics & Information<br />
+                <span className="text-neon-orange">Technology Department</span><br />
+                Government of Odisha
+              </div>
+            </motion.div>
+            {/* Divider */}
+            <div className="hidden sm:block h-12 w-px bg-gradient-to-b from-transparent via-orange-300 to-transparent"></div>
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              className="flex items-center gap-2 sm:gap-3 bg-white rounded-lg p-2 shadow-[0_0_15px_rgba(255,107,53,0.1)] border border-orange-200/40"
+            >
+              <div className="h-8 sm:h-10 flex items-center">
+                <img
+                  src="/odisha-ai-summit-2025v2/assets/mission-removebg-preview.png"
+                  alt="Mission Logo"
+                  className="h-full w-auto object-contain"
+                />
+              </div>
+              <div className="h-6 sm:h-8 w-px bg-gradient-to-b from-transparent via-orange-300 to-transparent"></div>
+              <div className="h-8 sm:h-10 flex items-center">
+                <img
+                  src="/odisha-ai-summit-2025v2/assets/India_AI_logo.png"
+                  alt="India AI Logo"
+                  className="h-full w-auto object-contain"
+                />
+              </div>
+              <div className="h-6 sm:h-8 w-px bg-gradient-to-b from-transparent via-orange-300 to-transparent"></div>
+              <div className="h-8 sm:h-10 flex items-center">
+                <img
+                  src="/odisha-ai-summit-2025v2/assets/ocac-logo.png"
+                  alt="OCAC Logo"
+                  className="h-full w-auto object-contain"
+                />
+              </div>
+            </motion.div>
+
+
+
+
           </div>
 
           {/* Desktop Menu */}
@@ -179,7 +216,7 @@ export const Navbar: React.FC = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-neon-orange transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
-            {/* Language Toggle & Hidden Google Translate Element */}
+            {/* Language Toggle & Hidden Google Translate Element 
             <div className="flex items-center bg-orange-50 rounded-full p-1 border border-orange-200 mr-4 shadow-inner">
               <button
                 onClick={() => toggleLanguage('en')}
@@ -201,14 +238,14 @@ export const Navbar: React.FC = () => {
               </button>
             </div>
             <div id="google_translate_element"></div>
-
+*/}
             <Button
               variant="glow"
               className={`py-2 px-6 text-sm font-bold transition-all duration-300 ${isScrolled ? 'bg-neon-orange hover:bg-orange-600 shadow-[0_0_15px_rgba(255,107,53,0.4)]' : 'bg-neon-orange hover:bg-orange-600'
                 }`}
-              onClick={() => setIsModalOpen(true)}
+              onClick={() => window.open('https://forms.gle/yjEjyL4bhSUW75mGA', '_blank')}
             >
-              Register Visitors Only
+              Register For Summit
             </Button>
           </div>
 
@@ -251,10 +288,10 @@ export const Navbar: React.FC = () => {
                   className="w-full bg-neon-orange hover:bg-orange-600 shadow-[0_0_20px_rgba(255,107,53,0.4)]"
                   onClick={() => {
                     setIsMenuOpen(false);
-                    setIsModalOpen(true);
+                    window.open('https://forms.gle/yjEjyL4bhSUW75mGA', '_blank');
                   }}
                 >
-                  Register Visitors Only
+                  Register For Summit
                 </Button>
               </div>
             </div>

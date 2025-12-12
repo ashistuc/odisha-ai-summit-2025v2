@@ -16,9 +16,9 @@ const App: React.FC = () => {
       <main>
         <Hero />
         <About />
-        <CallForProposals />
+        {/* <CallForProposals /> */}
         <SummitTracks />
-        <VisionSection />
+        {/*<VisionSection />*/}
         <Agenda />
         <Speakers />
       </main>

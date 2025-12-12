@@ -3,20 +3,20 @@ import { SectionHeading } from './ui/SectionHeading';
 import { motion } from 'framer-motion';
 
 const speakers = [
-  { name: "Narendra Modi", role: "Prime Minister of India", img: "/odisha-ai-summit-2025v2/assets/Pm_Modi.png" },
-  { name: "Mohan Charan Majhi ", role: "Chief Minister of Odisha", img: "/odisha-ai-summit-2025v2/assets/Mohan_Charan_Majhi.jpg" },
+  { name: "Mr Vishal Dev", role: "Principal Secretary, Odisha", img: "/odisha-ai-summit-2025v2/assets/Vishal_Dev.jpg" },
+
 ];
 
 export const Speakers: React.FC = () => {
   return (
     <section id="speakers" className="py-16 md:py-24 bg-gradient-to-br from-white via-orange-50 to-orange-100 relative border-t border-orange-200/30">
-       {/* Decorative gradient */}
-       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-neon-orange to-transparent opacity-30"></div>
+      {/* Decorative gradient */}
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-neon-orange to-transparent opacity-30"></div>
 
       <div className="container mx-auto px-4">
         <SectionHeading subtitle="Distinguished Guests" title="Key Speakers" />
-        
-        <div className="grid md:grid-cols-2 gap-8 mt-8 md:mt-12 max-w-2xl mx-auto">
+
+        <div className="grid md:grid-cols-1 gap-8 mt-8 md:mt-12 max-w-2xl mx-auto">
           {speakers.map((speaker, i) => (
             <motion.div
               key={i}
@@ -31,7 +31,7 @@ export const Speakers: React.FC = () => {
                 <img
                   src={speaker.img}
                   alt={speaker.name}
-                  className="relative w-full h-full object-cover rounded-full border-4 border-white shadow-lg grayscale group-hover:grayscale-0 transition-all duration-700"
+                  className="relative w-full h-full object-cover rounded-full border-4 border-white shadow-lg group-hover:grayscale-0 transition-all duration-700"
                 />
                 {/* Distinguished badge */}
                 <div className="absolute -top-2 -right-2 w-8 h-8 bg-neon-orange rounded-full flex items-center justify-center shadow-lg">

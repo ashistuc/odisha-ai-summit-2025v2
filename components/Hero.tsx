@@ -13,35 +13,7 @@ export const Hero: React.FC = () => {
       <div className="absolute bottom-0 left-0 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-neon-orange/20 rounded-full blur-[80px] sm:blur-[100px] pointer-events-none"></div>
 
       {/* Logos */}
-      <div className="absolute top-20 sm:top-24 left-0 right-0 z-30 container mx-auto px-4 flex justify-between items-start pointer-events-none">
-        <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          className="bg-white rounded-lg p-2 flex items-center gap-2 sm:gap-3 shadow-[0_0_20px_rgba(255,107,53,0.15)] border border-orange-200/50 pointer-events-auto max-w-[70%] sm:max-w-none"
-        >
-          <div className="w-8 h-8 sm:w-10 sm:h-10 border-2 border-gray-200 rounded-full flex items-center justify-center flex-shrink-0">
-            <img src="/odisha-ai-summit-2025v2/assets/1666094039681.jpg" alt="Govt Logo" className="w-full h-full p-1 object-contain" />
-          </div>
-          <div className="text-gray-800 text-[9px] sm:text-[10px] leading-tight font-bold border-l border-orange-300 pl-2">
-            Electronics & Information<br />
-            <span className="text-neon-orange">Technology Department</span><br />
-            Government of Odisha
-          </div>
-        </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          className="bg-white rounded-lg p-2 shadow-[0_0_20px_rgba(255,107,53,0.15)] border border-orange-200/50 pointer-events-auto hidden sm:block"
-        >
-          <div className="flex items-center gap-2">
-            <div className="text-gray-800 font-bold text-sm tracking-widest font-display">OCAC</div>
-            <div className="text-[8px] text-gray-600 leading-tight border-l border-gray-300 pl-2">
-              Odisha Computer<br />Application Centre
-            </div>
-          </div>
-        </motion.div>
-      </div>
 
       <div className="container mx-auto px-4 z-20 grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mt-20 lg:mt-8">
 
@@ -52,7 +24,7 @@ export const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-display font-black leading-tight tracking-tight mb-2 text-gray-800">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-display font-black text-gray-800">
               ODISHA<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-purple via-orange-600 to-neon-orange text-glow">
                 𝐀𝐈 𝐒𝐮𝐦𝐦𝐢𝐭 𝟮𝟬𝟮𝟱
@@ -71,7 +43,7 @@ export const Hero: React.FC = () => {
 
             <div className="mt-4 sm:mt-6 mb-6 p-4 sm:p-6 rounded-2xl glass-card-strong border-l-4 border-l-neon-purple max-w-xl mx-auto lg:mx-0">
               <p className="text-orange-600 text-xs sm:text-sm uppercase tracking-widest mb-1">Pre-event to</p>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-800 font-display">India AI Impact Summit 2026</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-800 font-display">IndiaAI Impact Summit 2026</h3>
             </div>
 
             <p className="text-gray-600 text-base sm:text-lg max-w-lg mx-auto lg:mx-0 font-light leading-relaxed">
@@ -80,17 +52,17 @@ export const Hero: React.FC = () => {
           </motion.div>
 
           <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2"
+            className=" w-full justify-center lg:justify-start pt-2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
           >
-            <Button variant="glow" onClick={() => document.getElementById('proposals')?.scrollIntoView({ behavior: 'smooth' })} className="text-base sm:text-lg px-8 w-full sm:w-auto">
-              Call For Proposals
-            </Button>
-            <Button variant="outline" className="text-base sm:text-lg w-full sm:w-auto">
-              Download Brochure
-            </Button>
+
+            <a href="/odisha-ai-summit-2025v2/Summit_Agenda_11_12_2025.pdf" download="Summit_Agenda_11_12_2025.pdf" className="inline-block">
+              <Button variant="outline" className="text-base sm:text-lg w-full sm:w-auto">
+                Download Agenda
+              </Button>
+            </a>
           </motion.div>
         </div>
 
@@ -154,110 +126,7 @@ export const Hero: React.FC = () => {
       </div>
 
       {/* QR Code - Creative Floating Design - Fixed Position */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.5, rotate: -10, x: 50 }}
-        animate={{
-          opacity: 1,
-          scale: 1,
-          rotate: 0,
-          x: 0,
-          y: [0, -12, 0],
-        }}
-        transition={{
-          delay: 1.5,
-          duration: 0.8,
-          x: {
-            duration: 0.8,
-            ease: "easeOut"
-          },
-          y: {
-            duration: 2.5,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }
-        }}
-        whileHover={{
-          scale: 1.08,
-          rotate: 3,
-          y: -5,
-          transition: { duration: 0.3 }
-        }}
-        className="fixed bottom-6 sm:bottom-8 right-4 sm:right-6 z-[100] pointer-events-auto"
-      >
-        {/* Animated Glow Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-neon-purple/20 via-neon-orange/15 to-transparent rounded-2xl blur-xl animate-pulse-slow"></div>
 
-        {/* Main QR Card */}
-        <div className="relative glass-card-strong p-4 sm:p-5 rounded-2xl border border-orange-200/50 backdrop-blur-xl shadow-[0_0_30px_rgba(255,107,53,0.3),0_0_60px_rgba(255,140,66,0.2)] overflow-hidden">
-          {/* Animated Background Pattern */}
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-neon-purple/50 to-transparent"></div>
-            <div className="absolute bottom-0 right-0 w-20 h-20 bg-neon-blue/30 rounded-full blur-2xl"></div>
-          </div>
-
-          {/* QR Code Image with Glow */}
-          <div className="relative z-10 flex flex-col items-center">
-            <motion.div
-              animate={{
-                boxShadow: [
-                  "0 0 20px rgba(255,107,53,0.4)",
-                  "0 0 30px rgba(255,140,66,0.4)",
-                  "0 0 20px rgba(255,107,53,0.4)",
-                ]
-              }}
-              transition={{ duration: 2, repeat: Infinity }}
-              className="p-2 bg-white rounded-xl mb-2"
-            >
-              <img
-                src="/odisha-ai-summit-2025v2/assets/Odisha_qr.png"
-                alt="Scan QR Code"
-                className="w-28 h-28 sm:w-36 sm:h-36 object-contain"
-              />
-            </motion.div>
-
-            {/* Decorative Elements */}
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-1 h-1 bg-neon-purple rounded-full animate-pulse"></div>
-              <p className="text-gray-700 text-[11px] sm:text-xs text-center font-semibold tracking-wide">
-                Scan for more info
-              </p>
-              <div className="w-1 h-1 bg-neon-blue rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-            </div>
-
-            {/* Animated Scan Line Effect */}
-            <motion.div
-              animate={{ y: [0, 144, 0] }}
-              transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute top-2 left-2 right-2 h-[2px] bg-gradient-to-r from-transparent via-neon-purple to-transparent opacity-70"
-              style={{ maxHeight: '144px' }}
-            ></motion.div>
-          </div>
-
-          {/* Corner Decorations */}
-          <div className="absolute top-2 left-2 w-3 h-3 border-t-2 border-l-2 border-neon-purple opacity-60"></div>
-          <div className="absolute top-2 right-2 w-3 h-3 border-t-2 border-r-2 border-neon-purple opacity-60"></div>
-          <div className="absolute bottom-2 left-2 w-3 h-3 border-b-2 border-l-2 border-neon-blue opacity-60"></div>
-          <div className="absolute bottom-2 right-2 w-3 h-3 border-b-2 border-r-2 border-neon-blue opacity-60"></div>
-        </div>
-
-        {/* Floating Particles */}
-        <motion.div
-          animate={{
-            y: [0, -10, 0],
-            opacity: [0.5, 0.8, 0.5]
-          }}
-          transition={{ duration: 2, repeat: Infinity }}
-          className="absolute -top-2 -right-2 w-2 h-2 bg-neon-purple rounded-full blur-sm"
-        ></motion.div>
-        <motion.div
-          animate={{
-            y: [0, -8, 0],
-            opacity: [0.4, 0.7, 0.4]
-          }}
-          transition={{ duration: 2.5, repeat: Infinity, delay: 0.5 }}
-          className="absolute -bottom-2 -left-2 w-1.5 h-1.5 bg-neon-blue rounded-full blur-sm"
-        ></motion.div>
-      </motion.div>
 
       <motion.div
         initial={{ opacity: 0 }}
