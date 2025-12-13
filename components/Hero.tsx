@@ -144,6 +144,7 @@ export const Hero: React.FC = () => {
                 <div className="text-xs sm:text-sm font-bold text-gray-800 leading-tight">
                   State Convention Centre,<br />Bhubaneswar
                 </div>
+                <a href="https://share.google/n9qG012XBRQNh7lwy" target="_blank" rel="noopener noreferrer" className="text-xs text-orange-600 sm:text-sm font-bold text-gray-800 leading-tight">Direction</a>
               </div>
             </motion.div>
           </motion.div>
