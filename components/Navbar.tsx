@@ -197,7 +197,7 @@ export const Navbar: React.FC = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden xl:flex items-center gap-8">
             {navLinks.map((item) => (
               <a
                 key={item.name}
@@ -253,7 +253,7 @@ export const Navbar: React.FC = () => {
 
           {/* Mobile Menu */}
           {isMenuOpen && (
-            <div className=" bg-white absolute top-full left-0 right-0 bg-white/98 backdrop-blur-lg border-b border-orange-200/40 p-6 md:hidden flex flex-col gap-6 animate-in slide-in-from-top-5 duration-300 shadow-2xl shadow-orange-100/30 ">
+            <div className=" bg-white absolute top-full left-0 right-0 bg-white/98 backdrop-blur-lg border-b border-orange-200/40 p-6 xl:hidden flex flex-col gap-6 animate-in slide-in-from-top-5 duration-300 shadow-2xl shadow-orange-100/30 ">
               <div className="w-full h-px bg-gradient-to-r from-transparent via-orange-200 to-transparent mb-2"></div>
               {navLinks.map((item, index) => (
                 <a
@@ -299,7 +299,7 @@ export const Navbar: React.FC = () => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
-        className={`md:hidden fixed bottom-8 right-8 z-[60] p-4 rounded-full shadow-2xl shadow-orange-500/30 backdrop-blur-md border border-white/20 flex items-center justify-center ${isMenuOpen
+        className={`xl:hidden fixed bottom-8 right-8 z-[60] p-4 rounded-full shadow-2xl shadow-orange-500/30 backdrop-blur-md border border-white/20 flex items-center justify-center ${isMenuOpen
           ? 'bg-red-500 text-white rotate-0'
           : 'bg-gradient-to-r from-neon-orange to-orange-600 text-white'
           }`}
