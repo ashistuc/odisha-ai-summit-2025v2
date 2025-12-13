@@ -27,12 +27,12 @@ export const Hero: React.FC = () => {
             className="flex items-center justify-center lg:justify-start gap-4 mb-4"
           >
             <img
-              src="/odisha-ai-summit-2025v2/assets/Odisha_Ai_Summit.png"
+              src="/aisummit2025/assets/Odisha_Ai_Summit.png"
               alt="Odisha AI Summit Logo"
               className="h-16 sm:h-20 md:h-24 object-contain"
             />
             <img
-              src="/odisha-ai-summit-2025v2/assets/Ai_summit.jpeg"
+              src="/aisummit2025/assets/Ai_summit.jpeg"
               alt="Mission Logo"
               className="h-16 sm:h-20 md:h-24 object-contain"
             />
@@ -83,7 +83,7 @@ export const Hero: React.FC = () => {
             transition={{ delay: 0.6 }}
           >
 
-            <a href="/odisha-ai-summit-2025v2/Summit_Agenda_11_12_2025.pdf" download="Summit_Agenda_11_12_2025.pdf" className="inline-block">
+            <a href="/aisummit2025/Summit_Agenda_11_12_2025.pdf" download="Summit_Agenda_11_12_2025.pdf" className="inline-block">
               <Button variant="outline" className="text-base sm:text-lg w-full sm:w-auto">
                 Download Agenda
               </Button>
@@ -100,7 +100,7 @@ export const Hero: React.FC = () => {
             className="relative w-full h-full animate-float flex items-center justify-center p-4"
           >
             <img
-              src="/odisha-ai-summit-2025v2/assets/odisha-map.png"
+              src="/aisummit2025/assets/odisha-map.png"
               alt="Odisha Map"
               className="w-full h-full object-contain drop-shadow-[0_0_30px_rgba(255,107,53,0.4)]"
               style={{

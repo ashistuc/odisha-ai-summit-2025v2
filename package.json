@@ -2,7 +2,7 @@
   "name": "odisha-ai-summit-2025",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://ashistuc.github.io/odisha-ai-summit-2025v2",
+  "homepage": "https://aimission.odisha.gov.in/aisummit2025",
   "type": "module",
   "scripts": {
     "dev": "vite",

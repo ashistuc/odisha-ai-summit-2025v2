@@ -16,7 +16,7 @@ export const About: React.FC = () => {
           >
             <div className="absolute inset-0 bg-neon-purple/10 blur-[100px] rounded-full"></div>
             <img
-              src="/odisha-ai-summit-2025v2/assets/12.jpg"
+              src="/aisummit2025/assets/12.jpg"
               alt="Digital Transformation & AI Innovation"
               className="relative z-10 rounded-2xl shadow-[0_0_30px_rgba(255,107,53,0.3)] border border-orange-200/30 w-full"
             />

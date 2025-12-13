@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-4 md:mb-6">
               <img
-                src="/odisha-ai-summit-2025v2/assets/Odisha_Ai_Summit.png"
+                src="/aisummit2025/assets/Odisha_Ai_Summit.png"
                 alt="Odisha AI Summit 2025"
                 className="h-12 sm:h-16 md:h-20 object-contain"
               />

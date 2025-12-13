@@ -151,7 +151,7 @@ export const Navbar: React.FC = () => {
             >
               <div className="h-8 sm:h-10 flex items-center">
                 <img
-                  src="/odisha-ai-summit-2025v2/assets/india_elc_it.png"
+                  src="/aisummit2025/assets/india_elc_it.png"
                   alt="Mission Logo"
                   className="h-full w-auto object-contain"
                 />
@@ -160,7 +160,7 @@ export const Navbar: React.FC = () => {
               <div className="h-6 sm:h-8 w-px bg-gradient-to-b from-transparent via-orange-300 to-transparent"></div>
               <div className="h-8 sm:h-10 flex items-center">
                 <img
-                  src="/odisha-ai-summit-2025v2/assets/Digital_India_logo.svg.png"
+                  src="/aisummit2025/assets/Digital_India_logo.svg.png"
                   alt="OCAC Logo"
                   className="h-full w-auto object-contain"
                 />
@@ -168,7 +168,7 @@ export const Navbar: React.FC = () => {
               <div className="h-6 sm:h-8 w-px bg-gradient-to-b from-transparent via-orange-300 to-transparent"></div>
               <div className="h-8 sm:h-10 flex items-center">
                 <img
-                  src="/odisha-ai-summit-2025v2/assets/India_AI_logo.png"
+                  src="/aisummit2025/assets/India_AI_logo.png"
                   alt="OCAC Logo"
                   className="h-full w-auto object-contain"
                 />
@@ -176,7 +176,7 @@ export const Navbar: React.FC = () => {
               <div className="h-6 sm:h-8 w-px bg-gradient-to-b from-transparent via-orange-300 to-transparent"></div>
               <div className="h-8 sm:h-10 flex items-center">
                 <img
-                  src="/odisha-ai-summit-2025v2/assets/1666094039681.jpg"
+                  src="/aisummit2025/assets/1666094039681.jpg"
                   alt="OCAC Logo"
                   className="h-full w-auto object-contain"
                 />
@@ -184,7 +184,7 @@ export const Navbar: React.FC = () => {
               <div className="h-6 sm:h-8 w-px bg-gradient-to-b from-transparent via-orange-300 to-transparent"></div>
               <div className="h-8 sm:h-10 flex items-center">
                 <img
-                  src="/odisha-ai-summit-2025v2/assets/ocac-logo.png"
+                  src="/aisummit2025/assets/ocac-logo.png"
                   alt="OCAC Logo"
                   className="h-full w-auto object-contain"
                 />
