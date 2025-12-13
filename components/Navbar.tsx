@@ -249,18 +249,11 @@ export const Navbar: React.FC = () => {
             </Button>
           </div>
 
-          {/* Mobile Toggle */}
-          <button
-            className={`md:hidden transition-colors duration-300 ${isScrolled ? 'text-gray-700 hover:text-neon-orange' : 'text-gray-700 hover:text-orange-800'
-              }`}
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
+
 
           {/* Mobile Menu */}
           {isMenuOpen && (
-            <div className="absolute top-full left-0 right-0 bg-white/98 backdrop-blur-lg border-b border-orange-200/40 p-6 md:hidden flex flex-col gap-6 animate-in slide-in-from-top-5 duration-300 shadow-2xl shadow-orange-100/30">
+            <div className=" bg-white absolute top-full left-0 right-0 bg-white/98 backdrop-blur-lg border-b border-orange-200/40 p-6 md:hidden flex flex-col gap-6 animate-in slide-in-from-top-5 duration-300 shadow-2xl shadow-orange-100/30 ">
               <div className="w-full h-px bg-gradient-to-r from-transparent via-orange-200 to-transparent mb-2"></div>
               {navLinks.map((item, index) => (
                 <a
@@ -298,6 +291,27 @@ export const Navbar: React.FC = () => {
           )}
         </div>
       </nav>
+
+      {/* Mobile Toggle - Floating Action Button */}
+      <motion.button
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+        className={`md:hidden fixed bottom-8 right-8 z-[60] p-4 rounded-full shadow-2xl shadow-orange-500/30 backdrop-blur-md border border-white/20 flex items-center justify-center ${isMenuOpen
+          ? 'bg-red-500 text-white rotate-0'
+          : 'bg-gradient-to-r from-neon-orange to-orange-600 text-white'
+          }`}
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+      >
+        <motion.div
+          animate={{ rotate: isMenuOpen ? 90 : 0 }}
+          transition={{ duration: 0.2 }}
+        >
+          {isMenuOpen ? <X size={24} strokeWidth={2.5} /> : <Menu size={24} strokeWidth={2.5} />}
+        </motion.div>
+      </motion.button>
       <RegistrationModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   );
