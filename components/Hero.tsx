@@ -19,6 +19,26 @@ export const Hero: React.FC = () => {
 
         {/* Left: Text Content */}
         <div className="space-y-6 text-center lg:text-left relative order-2 lg:order-1">
+          {/* Summit Logos */}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="flex items-center justify-center lg:justify-start gap-4 mb-4"
+          >
+            <img
+              src="/odisha-ai-summit-2025v2/assets/Odisha_Ai_Summit.png"
+              alt="Odisha AI Summit Logo"
+              className="h-16 sm:h-20 md:h-24 object-contain"
+            />
+            <img
+              src="/odisha-ai-summit-2025v2/assets/mission-removebg-preview.png"
+              alt="Mission Logo"
+              className="h-16 sm:h-20 md:h-24 object-contain"
+            />
+
+          </motion.div>
+
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

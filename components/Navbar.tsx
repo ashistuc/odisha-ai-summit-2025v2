@@ -143,24 +143,7 @@ export const Navbar: React.FC = () => {
         <div className="container mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center gap-3 sm:gap-4">
             {/* Three Organization Logos */}
-            {/* Government Department Logo */}
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.1 }}
-              className="bg-white rounded-lg p-2 flex items-center gap-2 sm:gap-3 shadow-[0_0_20px_rgba(255,107,53,0.15)] border border-orange-200/50 max-w-[70%] sm:max-w-none"
-            >
-              <div className="w-8 h-8 sm:w-10 sm:h-10 border-2 border-gray-200 rounded-full flex items-center justify-center flex-shrink-0">
-                <img src="/odisha-ai-summit-2025v2/assets/1666094039681.jpg" alt="Govt Logo" className="w-full h-full p-1 object-contain" />
-              </div>
-              <div className="text-gray-800 text-[9px] sm:text-[10px] leading-tight font-bold border-l border-orange-300 pl-2">
-                Electronics & Information<br />
-                <span className="text-neon-orange">Technology Department</span><br />
-                Government of Odisha
-              </div>
-            </motion.div>
-            {/* Divider */}
-            <div className="hidden sm:block h-12 w-px bg-gradient-to-b from-transparent via-orange-300 to-transparent"></div>
+
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -168,12 +151,36 @@ export const Navbar: React.FC = () => {
             >
               <div className="h-8 sm:h-10 flex items-center">
                 <img
-                  src="/odisha-ai-summit-2025v2/assets/Odisha_Ai_Summit.png"
+                  src="/odisha-ai-summit-2025v2/assets/india_elc_it.png"
                   alt="Mission Logo"
                   className="h-full w-auto object-contain"
                 />
               </div>
 
+              <div className="h-6 sm:h-8 w-px bg-gradient-to-b from-transparent via-orange-300 to-transparent"></div>
+              <div className="h-8 sm:h-10 flex items-center">
+                <img
+                  src="/odisha-ai-summit-2025v2/assets/Digital_India_logo.svg.png"
+                  alt="OCAC Logo"
+                  className="h-full w-auto object-contain"
+                />
+              </div>
+              <div className="h-6 sm:h-8 w-px bg-gradient-to-b from-transparent via-orange-300 to-transparent"></div>
+              <div className="h-8 sm:h-10 flex items-center">
+                <img
+                  src="/odisha-ai-summit-2025v2/assets/India_AI_logo.png"
+                  alt="OCAC Logo"
+                  className="h-full w-auto object-contain"
+                />
+              </div>
+              <div className="h-6 sm:h-8 w-px bg-gradient-to-b from-transparent via-orange-300 to-transparent"></div>
+              <div className="h-8 sm:h-10 flex items-center">
+                <img
+                  src="/odisha-ai-summit-2025v2/assets/1666094039681.jpg"
+                  alt="OCAC Logo"
+                  className="h-full w-auto object-contain"
+                />
+              </div>
               <div className="h-6 sm:h-8 w-px bg-gradient-to-b from-transparent via-orange-300 to-transparent"></div>
               <div className="h-8 sm:h-10 flex items-center">
                 <img

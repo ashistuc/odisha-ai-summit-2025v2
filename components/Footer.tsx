@@ -12,15 +12,17 @@ export const Footer: React.FC = () => {
 
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-4 md:mb-6">
-              <div className="w-8 h-8 rounded bg-neon-purple flex items-center justify-center font-bold text-white text-xs">OA</div>
-              <h2 className="text-2xl font-display font-bold text-white">
-                ODISHA <span className="text-neon-purple">AI SUMMIT 2025</span>
-              </h2>
+              <img
+                src="/odisha-ai-summit-2025v2/assets/Odisha_Ai_Summit.png"
+                alt="Odisha AI Summit 2025"
+                className="h-12 sm:h-16 md:h-20 object-contain"
+              />
+              <p className="text-gray-400 max-w-sm leading-relaxed text-sm sm:text-base">
+                Empowering the state through ethical, inclusive, and scalable Artificial Intelligence. Organized by the Electronics & IT Department, Govt of Odisha.
+              </p>
             </div>
 
-            <p className="text-gray-400 max-w-sm mb-6 md:mb-8 leading-relaxed text-sm sm:text-base">
-              Empowering the state through ethical, inclusive, and scalable Artificial Intelligence. Organized by the Electronics & IT Department, Govt of Odisha.
-            </p>
+
             <div className="flex gap-4">
               {/* X (Twitter) */}
               <a href="x.com/EIT_Odisha" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-neon-orange hover:border-neon-orange transition-all hover:shadow-[0_0_15px_rgba(255,107,53,0.5)]">

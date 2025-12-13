@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 const speakers = [
   { name: "Mr Vishal Dev", role: "Principal Secretary, Odisha", img: "/odisha-ai-summit-2025v2/assets/Vishal_Dev.jpg" },
   { name: "Mohan Charan Majhi ", role: "Chief Minister of Odisha", img: "/odisha-ai-summit-2025v2/assets/Mohan_Charan_Majhi.jpg" },
+  { name: "Dr. Mukesh Mahaling", role: "Minister for Electronics & Information Technology (IT), Odisha", img: "/odisha-ai-summit-2025v2/assets/Dr-Mukesh-Mahaling.png" },
 ];
 
 export const Speakers: React.FC = () => {
@@ -16,7 +17,7 @@ export const Speakers: React.FC = () => {
       <div className="container mx-auto px-4">
         <SectionHeading subtitle="Distinguished Guests" title="Key Speakers" />
 
-        <div className="grid md:grid-cols-2 gap-8 mt-8 md:mt-12 max-w-2xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 mt-8 md:mt-12 max-w-4xl mx-auto">
           {speakers.map((speaker, i) => (
             <motion.div
               key={i}
