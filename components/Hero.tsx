@@ -32,7 +32,7 @@ export const Hero: React.FC = () => {
               className="h-16 sm:h-20 md:h-24 object-contain"
             />
             <img
-              src="/odisha-ai-summit-2025v2/assets/mission-removebg-preview.png"
+              src="/odisha-ai-summit-2025v2/assets/Ai_summit.jpeg"
               alt="Mission Logo"
               className="h-16 sm:h-20 md:h-24 object-contain"
             />
