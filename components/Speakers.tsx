@@ -3,9 +3,10 @@ import { SectionHeading } from './ui/SectionHeading';
 import { motion } from 'framer-motion';
 
 const speakers = [
-  { name: "Mr Vishal Dev", role: "Principal Secretary, Odisha", img: "/aisummit2025/assets/Vishal_Dev.jpg" },
   { name: "Mohan Charan Majhi ", role: "Chief Minister of Odisha", img: "/aisummit2025/assets/Mohan_Charan_Majhi.jpg" },
   { name: "Dr. Mukesh Mahaling", role: "Minister for Electronics & Information Technology (IT), Odisha", img: "/aisummit2025/assets/Dr-Mukesh-Mahaling.png" },
+  { name: "Mr Vishal Dev", role: "Principal Secretary, Odisha", img: "/aisummit2025/assets/Vishal_Dev.jpg" },
+
 ];
 
 export const Speakers: React.FC = () => {
