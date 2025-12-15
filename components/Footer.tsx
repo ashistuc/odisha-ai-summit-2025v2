@@ -38,6 +38,10 @@ export const Footer: React.FC = () => {
               <a href="https://www.linkedin.com/company/eitodisha/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-neon-orange hover:border-neon-orange transition-all hover:shadow-[0_0_15px_rgba(255,107,53,0.5)]">
                 <Linkedin size={18} />
               </a>
+              {/* Instagram */}
+              <a href="https://www.instagram.com/eit_odisha/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-neon-orange hover:border-neon-orange transition-all hover:shadow-[0_0_15px_rgba(255,107,53,0.5)]">
+                <Instagram size={18} />
+              </a>
             </div>
           </div>
 
