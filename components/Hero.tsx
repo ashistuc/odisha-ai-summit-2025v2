@@ -83,7 +83,7 @@ export const Hero: React.FC = () => {
             transition={{ delay: 0.6 }}
           >
 
-            <a href="/aisummit2025/Summit_Agenda_11_12_2025.pdf" download="Summit_Agenda_11_12_2025.pdf" className="inline-block">
+            <a href="/aisummit2025/Latest_Summit_Agenda_19th_20th.pdf" download="Latest_Summit_Agenda_19th_20th.pdf" className="inline-block">
               <Button variant="outline" className="text-base sm:text-lg w-full sm:w-auto">
                 Download Agenda
               </Button>
